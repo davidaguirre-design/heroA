@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  z-index: 10;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  opacity: 0.6;
+}
+
+
+.hero {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.half {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
+
+.left {
+  background-color: #ff073a;
+}
+
+.right {
+  background-color: #ffffff;
+}
+
+.title {
+  font-size: 25vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 900;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.red {
+  color: #ff073a;
+}
+
+
+.cta {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #000;
+  margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.btn {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d00630;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .half {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  .title {
+    font-size: 25vw;
+  }
+}
